@@ -1,4 +1,4 @@
-var pet = {
+let pet = {
    name :"tuffi",
    age :3,
    type: "cat",
@@ -8,19 +8,19 @@ var pet = {
 
  feed: function() {
    this.hunger = Math.max(0, this.hunger - 20);
-   console.log(pet.hunger);
+  alert(this.hunger);
 },
 
 play: function() {
    this.happiness = Math.min(100, this.happiness + 20);
-   console.log(this.happiness)
+   alert(this.happiness);
 },
 
  agePet: function() {
-   this.age = ++1;
+   this.age += 1;
    this.happiness = Math.max(this.happiness - 5);
-   this.hunger = math.min(this.hunger + 10);
-   console.log(this.age)
+   this.hunger = Math.min(this.hunger + 10);
+  alert(this.age)
   }
 }
 
