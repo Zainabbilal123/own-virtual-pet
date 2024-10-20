@@ -8,19 +8,19 @@ let pet = {
 
  feed: function() {
    this.hunger = Math.max(0, this.hunger - 20);
-  alert(this.hunger);
+  alert(" hunger level is" + this.hunger);
 },
 
 play: function() {
    this.happiness = Math.min(100, this.happiness + 20);
-   alert(this.happiness);
+   alert(" happiness level is " + this.happiness);
 },
 
  agePet: function() {
    this.age += 1;
    this.happiness = Math.max(this.happiness - 5);
    this.hunger = Math.min(this.hunger + 10);
-  alert(this.age)
+  alert("tuffi age is " + this.age)
   }
 }
 
